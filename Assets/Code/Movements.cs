@@ -30,7 +30,7 @@ public class Movements : MonoBehaviour
         {
             transform.Translate(new Vector2(0, 1) * movingSpeed * Time.deltaTime);
             //transform.position += transform.up * (1 * movingSpeed * Time.deltaTime);
-            c.GetComponent<Rigidbody2D>().velocity = transform.up * 1;
+            c.GetComponent<Rigidbody2D>().velocity = transform.up * 0.5f;
 
 
 
@@ -40,7 +40,7 @@ public class Movements : MonoBehaviour
         {
             transform.Translate(new Vector2(0, -1) * movingSpeed * Time.deltaTime);
             //transform.position += transform.up * (-1 * movingSpeed * Time.deltaTime);
-            c.GetComponent<Rigidbody2D>().velocity = -transform.up * 1;
+            c.GetComponent<Rigidbody2D>().velocity = -transform.up * 0.5f;
 
 
         }
@@ -48,7 +48,7 @@ public class Movements : MonoBehaviour
         {
             //transform.Translate(new Vector2(1, 0) * movingSpeed * Time.deltaTime);
                 transform.Rotate(0, 0, -1 * rotateSpeed);
-            c.GetComponent<Rigidbody2D>().velocity = transform.right * 1;
+                c.GetComponent<Rigidbody2D>().velocity = transform.right * 0.5f;
 
 
         }
@@ -56,7 +56,7 @@ public class Movements : MonoBehaviour
         {
             //transform.Translate(new Vector2(-1, 0) * movingSpeed * Time.deltaTime);
             transform.Rotate(0, 0, 1 * rotateSpeed);
-            c.GetComponent<Rigidbody2D>().velocity = -transform.right * 1;
+            c.GetComponent<Rigidbody2D>().velocity = -transform.right * 0.5f;
 
 
 
