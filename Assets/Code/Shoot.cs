@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField]
+    GameObject character, projectile;
+
+    GameObject c;
+
+
     void Start()
     {
         
@@ -13,6 +18,13 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            c = Instantiate(projectile, character.transform.position + (transform.up * 1.5f), character.transform.rotation);
+            c.GetComponent<Rigidbody2D>().velocity = transform.up * 5;
+            Destroy(c, 1f);
+        }
         
     }
+   
 }
