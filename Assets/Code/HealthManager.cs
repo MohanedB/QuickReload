@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
@@ -31,6 +32,12 @@ public class HealthManager : MonoBehaviour
             Heal();
 
             }
+
+        if (healthbar.fillAmount == 0f)
+        {
+            SceneManager.LoadScene("GameOver");
+
+        }
     }
 
     public void TakeDamage()
