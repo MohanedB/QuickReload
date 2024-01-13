@@ -9,6 +9,7 @@ public static class StaticVariables
     public static int Scores;
     public static float damage;
     public static float healingamount;
+    public static bool hit = false;
 
 
 

@@ -15,11 +15,16 @@ public class HealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.V))
+        
+        if (StaticVariables.hit == true)
         {
             TakeDamage();
-            
+            StaticVariables.hit = false;
+
         }
+
+     
+
 
         if (Input.GetKeyDown(KeyCode.B))
             {
@@ -30,9 +35,11 @@ public class HealthManager : MonoBehaviour
 
     public void TakeDamage()
     {
-        StaticVariables.damage = 20f;
+        //StaticVariables.damage = 20f;
+        
         healthamount -= StaticVariables.damage;
         healthbar.fillAmount = healthamount/100f;
+        
     }
 
     public void Heal()
@@ -45,4 +52,9 @@ public class HealthManager : MonoBehaviour
 
         healthbar.fillAmount = healthamount / 100f;
     }
+
 }
+
+    
+
+
