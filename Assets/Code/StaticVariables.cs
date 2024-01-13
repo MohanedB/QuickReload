@@ -10,6 +10,7 @@ public static class StaticVariables
     public static float damage;
     public static float healingamount;
     public static bool hit = false;
+    public static int coins;
 
 
 

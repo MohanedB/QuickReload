@@ -28,6 +28,7 @@ public class Enemies : MonoBehaviour
     {
         Debug.Log($"Collision Detected: {collision.gameObject.name}");
         StaticVariables.Scores += 10;
+        StaticVariables.coins += 1;
 
         Destroy(c);
 
