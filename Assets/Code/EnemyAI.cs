@@ -25,9 +25,10 @@ public class EnemyAI : MonoBehaviour
 
     public static Vector3 left;
 
-    static int EnemyHP;
+    private int EnemyHP;
     void Start()
     {
+        StaticVariables.weapondamage = 2;
         EnemyHP = 5;
         targetCharacter = GameObject.FindWithTag("Character");
     }
@@ -56,7 +57,9 @@ public class EnemyAI : MonoBehaviour
     {
         if(collision.gameObject.tag == "Character" || collision.gameObject.tag == "Weapons")
         {  
-        EnemyHP -= 1;
+        EnemyHP -= StaticVariables.weapondamage;
+        Debug.Log("EnemyHP: " + EnemyHP);
+      
         }
     }
 

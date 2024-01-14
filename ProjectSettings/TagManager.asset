@@ -12,6 +12,8 @@ TagManager:
   - EnemyRed
   - Weapons
   - Walls
+  - Destroy
+  - PowerUp
   layers:
   - Default
   - TransparentFX

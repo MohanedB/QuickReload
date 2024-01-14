@@ -20,8 +20,6 @@ public class Character : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy") { 
         StaticVariables.damage = 50f;
-
-
         StaticVariables.hit = true;
     }
     }
