@@ -22,7 +22,7 @@ public class Shoot : MonoBehaviour
 
 
         {
-            c = Instantiate(projectile, character.transform.position + (transform.up * 1.5f), character.transform.rotation);
+            c = Instantiate(projectile, character.transform.position + (transform.up * 1f), character.transform.rotation);
             c.GetComponent<Rigidbody2D>().velocity = transform.up * 5;
             Destroy(c, 1f);
         }

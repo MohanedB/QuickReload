@@ -12,16 +12,16 @@ public class AsteroidCannon : MonoBehaviour
 
     GameObject c;    
 
-    int chance = 7;
+    int chance = 15;
     void Start()
     {
-        InvokeRepeating("ShootChance", 0, 3);
-        InvokeRepeating("ChanceIncrease", 0, 15);
+        InvokeRepeating("ShootChance", 0, 5);
+        InvokeRepeating("ChanceIncrease", 0, 10);
     }
 
     private void ShootChance(){
         int rand = Random.Range(1, chance);
-        if(rand > 0){
+        if(rand == 1){
         c = Instantiate(projectile, transform.position, Quaternion.identity);
         
         RandomCannonLocation randomiser = GetComponent<RandomCannonLocation>();

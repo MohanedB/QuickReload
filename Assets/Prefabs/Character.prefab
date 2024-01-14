@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 3028875921095119551}
-  projectile: {fileID: 0}
+  projectile: {fileID: 6739692838691729789, guid: fa37c85d8abd7f74f862c92f62eb48a2, type: 3}
 --- !u!114 &4530363089651219977
 MonoBehaviour:
   m_ObjectHideFlags: 0

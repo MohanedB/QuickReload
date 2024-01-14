@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 516832836147388124}
   - component: {fileID: 8693807289611948992}
   - component: {fileID: 7893152055863041258}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -135,10 +135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73d5e82f804a00b4dbe98b08ab370411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   charac: {fileID: 2800498873108599715}
   characRotate: {fileID: 6011170228679472455}
-  projectile: {fileID: 0}
+  projectile: {fileID: 6739692838691729789, guid: cb08dcfb1cb83d945b1c62b7a1167b8b, type: 3}
   speed: 0.3
 --- !u!61 &7893152055863041258
 BoxCollider2D:
@@ -195,7 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5278075791139754806}
   - component: {fileID: 4081856651405233505}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy Visual
   m_TagString: Enemy
   m_Icon: {fileID: 0}

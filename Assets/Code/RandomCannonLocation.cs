@@ -5,7 +5,7 @@ using UnityEngine;
 public class RandomCannonLocation : MonoBehaviour
 {
     private Camera _mainCam;
-    private int interval = 3;
+    private int interval = 30;
     private int offset = 25;
     private int _screenWidth;
     private int _screenHeight;
@@ -41,6 +41,7 @@ public class RandomCannonLocation : MonoBehaviour
         int randomHeight = Random.Range(0, _screenHeight + 1);
         Vector3 newPos = _mainCam.ScreenToWorldPoint(new Vector3(randomWidth, randomHeight, 0));
         fireAtPosition = newPos;
+        newPos.z = 0;
         return newPos;
     }
     
@@ -60,6 +61,7 @@ public class RandomCannonLocation : MonoBehaviour
         }
         
         Vector3 newPos = _mainCam.ScreenToWorldPoint(new Vector3(randomWidth, randomHeight, 0));
+        newPos.z = 0;
         return newPos;
     }
     
