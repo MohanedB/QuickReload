@@ -8,7 +8,7 @@ public class EnemyAI : MonoBehaviour
     GameObject targetCharacter;
 
     [SerializeField]
-    GameObject charac;
+    GameObject charac, weapon;
 
     [SerializeField]
     GameObject characRotate;
@@ -55,10 +55,13 @@ public class EnemyAI : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Character" || collision.gameObject.tag == "Weapons")
+
+        if (collision.gameObject.tag == "Character" || collision.gameObject.tag == "Weapons")
         {  
         EnemyHP -= StaticVariables.weapondamage;
         Debug.Log("EnemyHP: " + EnemyHP);
+
+           
       
         }
     }
