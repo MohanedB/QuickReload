@@ -70,8 +70,9 @@ public class EnemyAI : MonoBehaviour
 
     IEnumerator Shoot(){
         yield return new WaitForSeconds(3f);
-        c = Instantiate(projectile, charac.transform.position + (transform.forward * 1f), characRotate.transform.rotation);
-        c.GetComponent<Rigidbody2D>().velocity = transform.up * 5;
+        c = Instantiate(projectile, charac.transform.position + (transform.forward * 5f), characRotate.transform.rotation);
+        c.GetComponent<Rigidbody2D>().velocity = transform.forward * 5;
+        c.GetComponent<Rigidbody2D>().AddForce(transform.forward * 5, ForceMode2D.Impulse);
         Destroy(c, 2f);
         yield return null;
     }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class AsteroidCannon : MonoBehaviour
+public class EnemyCannon : MonoBehaviour
 {
     [SerializeField]
     GameObject projectile;
@@ -12,11 +12,11 @@ public class AsteroidCannon : MonoBehaviour
 
     GameObject c;    
 
-    int chance = 15;
+    int chance = 20;
     void Start()
     {
-        InvokeRepeating("ShootChance", 0, 30);
-        InvokeRepeating("ChanceIncrease", 0, 15);
+        InvokeRepeating("ShootChance", 30, 40);
+        InvokeRepeating("ChanceIncrease", 30, 15);
     }
 
     private void ShootChance(){
