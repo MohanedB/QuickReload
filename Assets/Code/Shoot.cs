@@ -18,7 +18,9 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
+
+
         {
             c = Instantiate(projectile, character.transform.position + (transform.up * 1.5f), character.transform.rotation);
             c.GetComponent<Rigidbody2D>().velocity = transform.up * 5;
