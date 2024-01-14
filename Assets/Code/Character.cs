@@ -21,6 +21,9 @@ public class Character : MonoBehaviour
         if(collision.gameObject.tag == "Enemy") { 
         StaticVariables.damage = 50f;
         StaticVariables.hit = true;
-    }
+        }else if(collision.gameObject.tag == "Asteroid") { 
+        StaticVariables.damage = 25f;
+        StaticVariables.hit = true;
+        }
     }
 }

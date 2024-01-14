@@ -15,8 +15,8 @@ public class AsteroidCannon : MonoBehaviour
     int chance = 15;
     void Start()
     {
-        InvokeRepeating("ShootChance", 0, 30);
-        InvokeRepeating("ChanceIncrease", 0, 15);
+        InvokeRepeating("ShootChance", 0, 5);
+        InvokeRepeating("ChanceIncrease", 0, 10);
     }
 
     private void ShootChance(){

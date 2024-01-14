@@ -15,8 +15,8 @@ public class EnemyCannon : MonoBehaviour
     int chance = 20;
     void Start()
     {
-        InvokeRepeating("ShootChance", 30, 40);
-        InvokeRepeating("ChanceIncrease", 30, 15);
+        InvokeRepeating("ShootChance", 10, 10);
+        InvokeRepeating("ChanceIncrease", 10, 10);
     }
 
     private void ShootChance(){
