@@ -18,7 +18,7 @@ public class PowerUpsCreation : MonoBehaviour
         _screenWidth = _mainCam.orthographicSize * _mainCam.aspect;
         _screenHeight = _mainCam.orthographicSize;
 
-        InvokeRepeating("SpawnPowerup", 0, 9);
+        InvokeRepeating("SpawnPowerup", 0, 10);
         Debug.Log("A power up has been spawned");
     }
 

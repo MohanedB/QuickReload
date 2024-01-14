@@ -27,7 +27,7 @@ public class PowerUps : MonoBehaviour
 
             Destroy(c);
         }
-        else
+        else if(collision.gameObject.tag == "Character" && rand <= 3)
         {
             StaticVariables.weapondamage = 3;
             Debug.Log("Damafe: "+StaticVariables.weapondamage);
