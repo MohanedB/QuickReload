@@ -26,7 +26,7 @@ public class Enemies : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag != "Cannon"){
+        if(collision.gameObject.tag != "Cannon" && collision.gameObject.tag != "Walls"){
             Debug.Log($"Collision Detected: {collision.gameObject.name}");
             StaticVariables.Scores += 10;
 
