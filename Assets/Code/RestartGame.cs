@@ -8,18 +8,19 @@ public class RestartGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StaticVariables.Scores = 0;
-        StaticVariables.coins = 0;
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void ResetTheGame()
     {
         SceneManager.LoadScene("MainScene");
+        StaticVariables.Scores = 0;
+        StaticVariables.coins = 0;
         Debug.Log("Its working");
     }
 }

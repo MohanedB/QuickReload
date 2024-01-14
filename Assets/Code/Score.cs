@@ -11,6 +11,7 @@ public class Score : MonoBehaviour
     TMP_Text t;
     void Start()
     {
+ 
     }
 
     // Update is called once per frame
