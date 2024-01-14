@@ -18,7 +18,7 @@ public class RestartGame : MonoBehaviour
     }
     public void ResetTheGame()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("MainGameScene");
         StaticVariables.Scores = 0;
         StaticVariables.coins = 0;
         Debug.Log("Its working");

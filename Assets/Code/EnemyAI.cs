@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -38,15 +38,26 @@ public class EnemyAI : MonoBehaviour
         Move(pos);
         Rotate(pos);
 
-        if(EnemyHP == 0){
-            Destroy(charac, 0.1f);
+        if (EnemyHP <= 0)
+        {
+            if (charac != null)
+            {
+                Destroy(charac, 0.1f);
+                StaticVariables.Scores += 10;
+                StaticVariables.coins += 1;
+                charac = null; 
         }
 
+
+       }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if(collision.gameObject.tag == "Character" || collision.gameObject.tag == "Weapons")
+        {  
         EnemyHP -= 1;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)

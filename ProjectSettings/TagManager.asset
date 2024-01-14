@@ -10,6 +10,7 @@ TagManager:
   - Cannon
   - EnemyBlue
   - EnemyRed
+  - Weapons
   layers:
   - Default
   - TransparentFX
