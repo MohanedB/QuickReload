@@ -26,15 +26,14 @@ public class Enemies : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log($"Collision Detected: {collision.gameObject.name}");
-        StaticVariables.Scores += 10;
+        if(collision.gameObject.tag != "Cannon"){
+            Debug.Log($"Collision Detected: {collision.gameObject.name}");
+            StaticVariables.Scores += 10;
 
-        Destroy(c);
+            Destroy(c);
 
-
-
-
-        System.Console.WriteLine(StaticVariables.Scores);
+            System.Console.WriteLine(StaticVariables.Scores);
+        }
 
 
     }

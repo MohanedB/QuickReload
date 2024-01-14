@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField]
-    GameObject target;
+    GameObject targetCharacter;
 
     [SerializeField]
     GameObject charac;
@@ -26,15 +25,16 @@ public class EnemyAI : MonoBehaviour
 
     public static Vector3 left;
 
-    int EnemyHP;
+    static int EnemyHP;
     void Start()
     {
         EnemyHP = 5;
+        targetCharacter = GameObject.FindWithTag("Character");
     }
 
     void FixedUpdate()
     {
-        Vector3 pos = target.transform.position;
+        Vector3 pos = targetCharacter.transform.position;
         Move(pos);
         Rotate(pos);
 
@@ -55,11 +55,11 @@ public class EnemyAI : MonoBehaviour
     }
 
     IEnumerator Shoot(){
-        yield return new WaitForSeconds(2.2f);
+        yield return new WaitForSeconds(3f);
         c = Instantiate(projectile, charac.transform.position + (transform.forward * 1f), characRotate.transform.rotation);
         c.GetComponent<Rigidbody2D>().velocity = transform.up * 5;
         Destroy(c, 2f);
-        yield return new WaitForSeconds(3f);
+        yield return null;
     }
 
     private void Move(Vector3 pos){
