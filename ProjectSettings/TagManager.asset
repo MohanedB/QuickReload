@@ -8,6 +8,8 @@ TagManager:
   - Character
   - Asteroid
   - Cannon
+  - EnemyBlue
+  - EnemyRed
   layers:
   - Default
   - TransparentFX
