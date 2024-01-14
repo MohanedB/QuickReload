@@ -28,7 +28,7 @@ public class EnemyAI : MonoBehaviour
     private int EnemyHP;
     void Start()
     {
-        StaticVariables.enemydamage = 2;
+        StaticVariables.weapondamage = 2;
         EnemyHP = 5;
         targetCharacter = GameObject.FindWithTag("Character");
     }
