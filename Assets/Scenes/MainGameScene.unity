@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 27836630}
   m_Layer: 0
   m_Name: Enemy2
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1587,7 +1587,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903375122}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -3012,7 +3012,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475465459}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -3529,7 +3529,7 @@ GameObject:
   - component: {fileID: 2063272738}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3691,7 +3691,7 @@ Transform:
   m_GameObject: {fileID: 2063272737}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.57, y: -4.11, z: 0}
+  m_LocalPosition: {x: 5.21, y: -2.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

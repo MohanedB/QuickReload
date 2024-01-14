@@ -11,6 +11,7 @@ public static class StaticVariables
     public static float healingamount;
     public static bool hit = false;
     public static int coins;
+    public static int weapondamage;
 
 
 
