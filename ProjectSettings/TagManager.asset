@@ -11,6 +11,8 @@ TagManager:
   - EnemyBlue
   - EnemyRed
   - Weapons
+  - Destroy
+  - PowerUp
   layers:
   - Default
   - TransparentFX
