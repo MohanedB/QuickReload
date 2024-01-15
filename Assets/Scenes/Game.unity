@@ -993,6 +993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 4692676553523902525, guid: 4b8ed862a693fe6458d913705360b4f4, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 6335595749470008034, guid: c708f1590612a084eadc79ac740f99cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2313,6 +2317,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c751839e2883aa74681df08b83d22a2c, type: 3}
+--- !u!1001 &1643888510
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3537045860796073495, guid: 8502f2df8070c4741b37df05a055bf75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537045860796073495, guid: 8502f2df8070c4741b37df05a055bf75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537045860796073495, guid: 8502f2df8070c4741b37df05a055bf75, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537045860796073495, guid: 8502f2df8070c4741b37df05a055bf75, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537045860796073495, guid: 8502f2df8070c4741b37df05a055bf75, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537045860796073495, guid: 8502f2df8070c4741b37df05a055bf75, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537045860796073495, guid: 8502f2df8070c4741b37df05a055bf75, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537045860796073495, guid: 8502f2df8070c4741b37df05a055bf75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537045860796073495, guid: 8502f2df8070c4741b37df05a055bf75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537045860796073495, guid: 8502f2df8070c4741b37df05a055bf75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784221903273317776, guid: 8502f2df8070c4741b37df05a055bf75, type: 3}
+      propertyPath: m_Name
+      value: 534px-Super_Bell_Artwork_-_Super_Mario_3D_World
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8502f2df8070c4741b37df05a055bf75, type: 3}
 --- !u!1001 &1649347462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2884,3 +2945,4 @@ SceneRoots:
   - {fileID: 901523726}
   - {fileID: 932695449}
   - {fileID: 111579805}
+  - {fileID: 1643888510}
