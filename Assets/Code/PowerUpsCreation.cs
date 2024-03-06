@@ -46,8 +46,8 @@ public class PowerUpsCreation : MonoBehaviour
     {
         if (collision.gameObject.tag == "Destroy")
         {
-            Destroy(c);
             Debug.Log("It has been destroyed");
+            Destroy(c);
         }
     }
 

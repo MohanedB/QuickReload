@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class PowerUps : MonoBehaviour
 {
-    [SerializeField]
-    GameObject c;
-
     public int chance=6;
     public int rand;
+
+    [SerializeField]
+    GameObject c;
  
 
     void Start()
     {
         rand = Random.Range(1, chance);
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -23,14 +22,14 @@ public class PowerUps : MonoBehaviour
         if (collision.gameObject.tag == "Character" && rand>=3)
         {
             StaticVariables.weapondamage = 1;
-            Debug.Log("Damafe: " + StaticVariables.weapondamage);
+            Debug.Log("Damage: " + StaticVariables.weapondamage);
 
             Destroy(c);
         }
         else if(collision.gameObject.tag == "Character" && rand <= 3)
         {
             StaticVariables.weapondamage = 3;
-            Debug.Log("Damafe: "+StaticVariables.weapondamage);
+            Debug.Log("Damage: "+StaticVariables.weapondamage);
             Destroy(c);
 
         }
