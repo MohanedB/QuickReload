@@ -1943,6 +1943,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 919097507843968589, guid: a6b17c20e14e6c847ba78b34cc504419, type: 3}
+      propertyPath: m_TagString
+      value: Destroy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016570368000731769, guid: a6b17c20e14e6c847ba78b34cc504419, type: 3}
+      propertyPath: m_TagString
+      value: Destroy
+      objectReference: {fileID: 0}
     - target: {fileID: 2243592492871086384, guid: a6b17c20e14e6c847ba78b34cc504419, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.54
@@ -2018,6 +2026,14 @@ PrefabInstance:
     - target: {fileID: 7287371862562778394, guid: a6b17c20e14e6c847ba78b34cc504419, type: 3}
       propertyPath: m_Name
       value: Walls
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327164766217380778, guid: a6b17c20e14e6c847ba78b34cc504419, type: 3}
+      propertyPath: m_TagString
+      value: Destroy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735597172666949556, guid: a6b17c20e14e6c847ba78b34cc504419, type: 3}
+      propertyPath: m_TagString
+      value: Destroy
       objectReference: {fileID: 0}
     - target: {fileID: 7915813050272806504, guid: a6b17c20e14e6c847ba78b34cc504419, type: 3}
       propertyPath: m_LocalPosition.x
