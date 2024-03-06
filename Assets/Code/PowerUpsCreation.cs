@@ -44,7 +44,7 @@ public class PowerUpsCreation : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Destroy")
+        if (collision.gameObject.tag == "Walls")
         {
             Debug.Log("It has been destroyed");
             Destroy(c);
