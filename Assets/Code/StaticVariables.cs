@@ -12,7 +12,5 @@ public static class StaticVariables
     public static bool hit = false;
     public static int coins;
     public static int weapondamage;
-
-
-
+    public static int projectileamount;
 }
